@@ -7,8 +7,8 @@ export default function Slide02Transparency() {
       title="Никаких сюрпризов"
       subtitle="Вы видите всё на каждом этапе"
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base stagger-children">
-        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 text-base stagger-children">
+        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <Eye className="text-accentBlue" size={20} />
           </div>
@@ -18,7 +18,7 @@ export default function Slide02Transparency() {
           </p>
         </div>
 
-        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <Calendar className="text-accentBlue" size={20} />
           </div>
@@ -28,7 +28,7 @@ export default function Slide02Transparency() {
           </p>
         </div>
 
-        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <FileText className="text-accentBlue" size={20} />
           </div>
@@ -38,7 +38,7 @@ export default function Slide02Transparency() {
           </p>
         </div>
 
-        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <DollarSign className="text-accentBlue" size={20} />
           </div>
@@ -48,7 +48,7 @@ export default function Slide02Transparency() {
           </p>
         </div>
 
-        <div className="md:col-span-2 bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+        <div className="md:col-span-2 bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <Shield className="text-accentBlue" size={20} />
           </div>

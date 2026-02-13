@@ -7,15 +7,15 @@ export default function Slide04WhatWeBuild() {
       title="Что мы создаём"
       subtitle="Простыми словами о вашей системе"
     >
-      <div className="space-y-6">
-        <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
-          <p className="text-xl text-textPrimary leading-relaxed">
+      <div className="space-y-4 sm:space-y-6">
+        <div className="bg-gray-50 border border-gray-200 rounded-xl p-3 sm:p-4 text-center">
+          <p className="text-base sm:text-lg md:text-xl text-textPrimary leading-relaxed">
             Система управления клиентами и финансовыми операциями
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 stagger-children">
-          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 stagger-children">
+          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3 mx-auto">
               <Users className="text-accentBlue" size={20} />
             </div>
@@ -25,7 +25,7 @@ export default function Slide04WhatWeBuild() {
             </p>
           </div>
 
-          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3 mx-auto">
               <FileText className="text-accentBlue" size={20} />
             </div>
@@ -35,7 +35,7 @@ export default function Slide04WhatWeBuild() {
             </p>
           </div>
 
-          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3 mx-auto">
               <Wallet className="text-accentBlue" size={20} />
             </div>
@@ -45,7 +45,7 @@ export default function Slide04WhatWeBuild() {
             </p>
           </div>
 
-          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3 mx-auto">
               <Shield className="text-accentBlue" size={20} />
             </div>
@@ -55,7 +55,7 @@ export default function Slide04WhatWeBuild() {
             </p>
           </div>
 
-          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3 mx-auto">
               <Activity className="text-accentBlue" size={20} />
             </div>
@@ -65,7 +65,7 @@ export default function Slide04WhatWeBuild() {
             </p>
           </div>
 
-          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3 mx-auto">
               <BarChart3 className="text-accentBlue" size={20} />
             </div>
@@ -76,8 +76,8 @@ export default function Slide04WhatWeBuild() {
           </div>
         </div>
 
-        <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
-          <p className="text-lg text-navy font-semibold">
+        <div className="bg-gray-50 border border-gray-200 rounded-xl p-3 sm:p-4 text-center">
+          <p className="text-base sm:text-lg text-navy font-semibold">
             Всё готово для проверок регуляторов и защиты ваших денег
           </p>
         </div>

@@ -37,8 +37,8 @@ export default function Slide13RiskControls() {
         </CalloutCard>
       </div>
 
-      <div className="mt-6 bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
-        <p className="text-base font-semibold text-navy">
+      <div className="mt-4 sm:mt-6 bg-gray-50 border border-gray-200 rounded-xl p-3 sm:p-4 text-center">
+        <p className="text-sm sm:text-base font-semibold text-navy">
           Мы не ждём проблем — предотвращаем их заранее
         </p>
       </div>

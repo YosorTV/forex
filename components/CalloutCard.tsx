@@ -42,14 +42,14 @@ const typeLabels: Record<CalloutType, string> = {
 export default function CalloutCard({ type = "default", showLabel = true,  title, children }: CalloutCardProps) {
   const styles = typeStyles[type];
   return (
-    <div className={`border-l-2 ${styles.border} ${styles.bg} border border-gray-200/60 p-5 rounded-xl`}>
+    <div className={`border-l-2 ${styles.border} ${styles.bg} border border-gray-200/60 p-4 sm:p-5 rounded-xl`}>
       {showLabel && (
         <div className={`inline-block text-xs uppercase tracking-wider font-semibold mb-2 px-2.5 py-1 rounded-md ${styles.badge}`}>
           {typeLabels[type]}
         </div>
       )}
-      <h4 className="text-lg font-semibold text-textPrimary mb-2">{title}</h4>
-      <div className="text-textPrimary space-y-1">{children}</div>
+      <h4 className="text-base sm:text-lg font-semibold text-textPrimary mb-1 sm:mb-2">{title}</h4>
+      <div className="text-textPrimary space-y-1 text-sm sm:text-base">{children}</div>
     </div>
   );
 }

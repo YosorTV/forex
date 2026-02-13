@@ -8,23 +8,23 @@ export default function SlidePhase3BrandOffice() {
       title="Этап 3: Бренды и Офисы"
       subtitle="Многобрендовая структура с гибким управлением"
     >
-      <div className="space-y-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-base">
-          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+      <div className="space-y-4 sm:space-y-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 text-base">
+          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
               <Building className="text-accentBlue" size={20} />
             </div>
-            <h3 className="text-xl font-bold text-navy mb-2">Управление брендами</h3>
+            <h3 className="text-lg sm:text-xl font-bold text-navy mb-2">Управление брендами</h3>
             <p className="text-textPrimary">
               Создавайте и управляйте несколькими брендами внутри одной системы. Каждый бренд — отдельный изолированный бизнес
             </p>
           </div>
 
-          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
               <Building2 className="text-accentBlue" size={20} />
             </div>
-            <h3 className="text-xl font-bold text-navy mb-2">Офисы внутри брендов</h3>
+            <h3 className="text-lg sm:text-xl font-bold text-navy mb-2">Офисы внутри брендов</h3>
             <p className="text-textPrimary">
               Каждый бренд может иметь несколько офисов. Офисы работают независимо, но видны руководству бренда
             </p>
@@ -34,7 +34,7 @@ export default function SlidePhase3BrandOffice() {
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
               <Tags className="text-accentBlue" size={20} />
             </div>
-            <h3 className="text-xl font-bold text-navy mb-2">Гибкие статусы лидов</h3>
+            <h3 className="text-lg sm:text-xl font-bold text-navy mb-2">Гибкие статусы лидов</h3>
             <p className="text-textPrimary mb-3">
               Создавайте свои статусы для офисов: &ldquo;Новый&rdquo;, &ldquo;Депозит&rdquo;, &ldquo;Мигрированный&rdquo; — что угодно для вашего процесса
             </p>
@@ -44,7 +44,7 @@ export default function SlidePhase3BrandOffice() {
           </div>
         </div>
 
-        <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
+        <div className="bg-gray-50 border border-gray-200 rounded-xl p-3 sm:p-4 text-center">
           <p className="text-base text-textPrimary">
             <strong className="text-navy">Зачем это важно:</strong> Позволяет управлять несколькими торговыми марками и офисами из одного места с полным контролем
           </p>

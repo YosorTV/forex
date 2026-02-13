@@ -8,20 +8,20 @@ export default function Slide05WhyForex() {
       title="Почему Forex особенный"
       subtitle="Здесь нельзя ошибаться с безопасностью"
     >
-      <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white p-6 rounded-2xl mb-6">
-        <div className="flex items-center gap-4 mb-3">
-          <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
-            <Shield className="text-white" size={28} />
+      <div className="bg-gradient-to-r from-amber-500 to-orange-500 text-white p-4 sm:p-6 rounded-xl sm:rounded-2xl mb-4 sm:mb-6">
+        <div className="flex items-center gap-3 sm:gap-4 mb-2 sm:mb-3">
+          <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center backdrop-blur-sm flex-shrink-0">
+            <Shield className="text-white" size={24} />
           </div>
-          <h3 className="text-2xl font-bold">Высокие ставки</h3>
+          <h3 className="text-xl sm:text-2xl font-bold">Высокие ставки</h3>
         </div>
-        <p className="text-amber-50 text-lg">
+        <p className="text-amber-50 text-base sm:text-lg">
           Вы работаете с деньгами клиентов, контролируете доступ к средствам, и регуляторы проверяют каждый шаг
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 stagger-children">
-        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <DollarSign className="text-accentBlue" size={20} />
           </div>
@@ -31,7 +31,7 @@ export default function Slide05WhyForex() {
           </p>
         </div>
 
-        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <Lock className="text-accentBlue" size={20} />
           </div>
@@ -41,7 +41,7 @@ export default function Slide05WhyForex() {
           </p>
         </div>
 
-        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <FileCheck className="text-accentBlue" size={20} />
           </div>
@@ -51,7 +51,7 @@ export default function Slide05WhyForex() {
           </p>
         </div>
 
-        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <Shield className="text-accentBlue" size={20} />
           </div>
@@ -62,8 +62,8 @@ export default function Slide05WhyForex() {
         </div>
       </div>
 
-      <div className="mt-8 bg-gradient-to-r from-navy to-accentBlue text-white p-6 rounded-2xl text-center">
-        <p className="text-xl font-semibold">
+      <div className="mt-6 sm:mt-8 bg-gradient-to-r from-navy to-accentBlue text-white p-4 sm:p-6 rounded-xl sm:rounded-2xl text-center">
+        <p className="text-base sm:text-lg md:text-xl font-semibold">
           Безопасность, журнал действий и контроль доступа — с первого дня, а не потом
         </p>
       </div>

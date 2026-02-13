@@ -1,4 +1,3 @@
-import React from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface NavigationBarProps {
@@ -14,44 +13,36 @@ export default function NavigationBar({ current, total, onPrev, onNext, phase }:
   const isLast = current === total - 1;
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 py-3 sm:py-4 px-4 sm:px-6 z-40 shadow-nav">
-      <div className="max-w-5xl mx-auto flex items-center justify-between">
+    <div className="fixed bottom-4 sm:bottom-6 left-0 right-0 z-40 flex justify-center px-3 sm:px-6 pointer-events-none">
+      <div className="pointer-events-auto flex items-center gap-2 rounded-full border border-white/45 bg-white/35 backdrop-blur-xl shadow-nav px-2 py-2">
         <button
           onClick={onPrev}
           disabled={isFirst}
-          className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 rounded-full font-medium transition-all text-sm sm:text-base ${
+          className={`flex h-10 w-10 items-center justify-center rounded-full transition-all ${
             isFirst
-              ? "text-gray-400 cursor-not-allowed"
-              : "text-navy hover:bg-gray-100"
+              ? "text-gray-400 cursor-not-allowed bg-white/20"
+              : "text-navy cursor-pointer bg-white/45 hover:bg-white/70"
           }`}
           aria-label="Previous slide"
         >
           <ChevronLeft size={20} />
-          <span className="hidden sm:inline">Prev</span>
         </button>
 
-        <div className="text-center">
-          <div className="text-textMuted font-medium text-sm sm:text-base">
-            <span className="hidden sm:inline">Слайд </span>{current + 1} <span className="hidden sm:inline">из </span>{total}
-          </div>
-          {phase && (
-            <div className="text-xs text-accentBlue font-medium mt-1">
-              {phase}
-            </div>
-          )}
+        <div className="min-w-20 rounded-full bg-white/45 px-4 py-2 text-center text-textMuted font-semibold text-sm sm:text-base">
+          {current + 1} <span className="hidden sm:inline">из </span>{total}
+          {phase && <span className="sr-only">{phase}</span>}
         </div>
 
         <button
           onClick={onNext}
           disabled={isLast}
-          className={`flex items-center gap-1 sm:gap-2 px-3 sm:px-4 py-2 rounded-full font-medium transition-all text-sm sm:text-base ${
+          className={`flex h-10 w-10 items-center justify-center rounded-full transition-all ${
             isLast
-              ? "text-gray-400 cursor-not-allowed"
-              : "text-navy hover:bg-gray-100"
+              ? "text-gray-400 cursor-not-allowed bg-white/20"
+              : "text-navy cursor-pointer bg-white/45 hover:bg-white/70"
           }`}
           aria-label="Next slide"
         >
-          <span className="hidden sm:inline">Next</span>
           <ChevronRight size={20} />
         </button>
       </div>

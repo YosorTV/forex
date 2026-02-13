@@ -9,8 +9,8 @@ export default function Slide12CostTransparency() {
       subtitle="Вы всегда знаете, куда идут деньги"
     >
       <div className="space-y-5">
-        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5">
-          <h3 className="text-xl font-bold text-navy mb-3 flex items-center gap-2">
+        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5">
+          <h3 className="text-lg sm:text-xl font-bold text-navy mb-2 sm:mb-3 flex items-center gap-2">
             <div className="w-8 h-8 rounded-lg bg-blue-50 flex items-center justify-center">
               <DollarSign className="text-accentBlue" size={18} />
             </div>
@@ -91,8 +91,8 @@ export default function Slide12CostTransparency() {
           </p>
         </CalloutCard>
 
-        <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 text-center">
-          <p className="text-base text-navy font-semibold">
+        <div className="bg-gray-50 border border-gray-200 rounded-xl p-3 sm:p-4 text-center">
+          <p className="text-sm sm:text-base text-navy font-semibold">
             Каждый месяц получаете подробные сведения о затратах
           </p>
         </div>

@@ -8,18 +8,18 @@ export default function Slide11HowWeWork() {
       subtitle="Прозрачность на каждом шаге"
     >
       <div className="space-y-5">
-        <div className="bg-gradient-to-r from-navy to-accentBlue text-white rounded-2xl p-6 text-center">
-          <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-            <Calendar className="text-white" size={28} />
+        <div className="bg-gradient-to-r from-navy to-accentBlue text-white rounded-xl sm:rounded-2xl p-4 sm:p-6 text-center">
+          <div className="w-12 h-12 sm:w-14 sm:h-14 bg-white/20 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-2 sm:mb-3">
+            <Calendar className="text-white" size={24} />
           </div>
-          <h3 className="text-2xl font-bold mb-2">Работаем двухнедельными циклами</h3>
-          <p className="text-blue-100 text-lg">
+          <h3 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">Работаем двухнедельными циклами</h3>
+          <p className="text-blue-100 text-base sm:text-lg">
             Понятный ритм, измеримый прогресс каждые две недели
           </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-base stagger-children">
-          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
               <ClipboardList className="text-accentBlue" size={20} />
             </div>
@@ -29,7 +29,7 @@ export default function Slide11HowWeWork() {
             </p>
           </div>
 
-          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
               <MessageSquare className="text-accentBlue" size={20} />
             </div>
@@ -39,7 +39,7 @@ export default function Slide11HowWeWork() {
             </p>
           </div>
 
-          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
               <Target className="text-accentBlue" size={20} />
             </div>
@@ -49,7 +49,7 @@ export default function Slide11HowWeWork() {
             </p>
           </div>
 
-          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5 hover:border-gray-300 transition-colors">
+          <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
               <RotateCw className="text-accentBlue" size={20} />
             </div>
@@ -60,8 +60,8 @@ export default function Slide11HowWeWork() {
           </div>
         </div>
 
-        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-5">
-          <div className="flex items-center gap-3 mb-4">
+        <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5">
+          <div className="flex items-center gap-3 mb-3 sm:mb-4">
             <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center">
               <Eye className="text-accentBlue" size={20} />
             </div>
