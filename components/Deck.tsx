@@ -59,6 +59,12 @@ export default function Deck() {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [currentSlide, goToPrev, goToNext, isAuthenticated]);
 
+  // Плавний скрол вгору після кожної зміни слайду
+  useEffect(() => {
+    if (!isAuthenticated) return;
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [currentSlide, isAuthenticated]);
+
   const handleLogin = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
