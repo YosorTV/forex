@@ -53,7 +53,7 @@ export default function Slide01Title() {
 
         <div className="stagger-children">
           <div className="mx-auto flex w-full max-w-sm flex-col items-center justify-center gap-1.5 rounded-lg border border-slate-300/80 bg-white/70 px-3 py-2 text-xs text-textPrimary font-medium sm:inline-flex sm:w-auto sm:max-w-full sm:flex-row sm:gap-0 sm:px-5 sm:py-3 sm:text-sm md:text-base">
-            <span className="text-center sm:whitespace-nowrap">MVP: 16-20 недель</span>
+            <span className="text-center sm:whitespace-nowrap">MVP: 20-26 недель</span>
             <span className="hidden sm:inline mx-2 text-slate-400" aria-hidden> | </span>
             <span className="text-center sm:whitespace-nowrap">Поэтапная оплата</span>
             <span className="hidden sm:inline mx-2 text-slate-400" aria-hidden> | </span>
