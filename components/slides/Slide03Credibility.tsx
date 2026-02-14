@@ -53,7 +53,7 @@ const projects: ProjectCard[] = [
   },
   {
     title: "Ship.Link — цифровой фрахтовый брокер",
-    url: "https://mallprix.com/uk/",
+    url: "https://ship.link/",
     icon: Anchor,
     iconGradient: "from-sky-600 to-accentBlue",
     dotColor: "bg-sky-600",
