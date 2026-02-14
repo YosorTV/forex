@@ -1,4 +1,3 @@
-import React from "react";
 
 interface ProgressBarProps {
   current: number;
@@ -12,8 +11,8 @@ export default function ProgressBar({ current, total }: ProgressBarProps) {
   const phaseMarkers = [5, 6, 7, 8, 9, 10, 11, 12, 13];
 
   return (
-    <div className="fixed top-0 left-0 right-0 z-50 h-2 w-full border-b border-slate-200/80 bg-white shadow-sm sm:h-1.5">
-      <div className="relative h-full w-full bg-gray-200/90 sm:bg-gray-200">
+    <div className="fixed top-0 left-0 right-0 z-50 h-2 w-full bg-white/35 backdrop-blur-xl shadow-nav sm:h-1.5">
+      <div className="relative h-full w-full bg-slate-200/40 sm:bg-slate-200/50">
         <div
           className="absolute inset-y-0 left-0 bg-gradient-to-r from-navy to-accentBlue transition-all duration-300 ease-out"
           style={{ width: `${percentage}%` }}
