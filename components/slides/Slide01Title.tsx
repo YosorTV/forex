@@ -18,33 +18,37 @@ export default function Slide01Title() {
         </div>
         
         <div className="my-4 sm:my-6 md:my-8 stagger-children">
-          {/* Мобільна версія: кожен круг з підписом зразу під ним, + та = менші */}
-          <div className="flex sm:hidden flex-col items-center gap-4">
-            <div className="text-center">
-              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-navy to-accentBlue rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-card mb-2">
+          {/* Мобільна версія: іконка + відцентрований текст під нею, в один ряд */}
+          <div className="sm:hidden flex flex-row flex-wrap justify-center items-start gap-3">
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-9 h-9 flex-shrink-0 bg-gradient-to-br from-navy to-accentBlue rounded-full flex items-center justify-center text-white text-sm font-bold shadow-card">
                 5
               </div>
-              <p className="text-xs font-semibold text-textPrimary">Специалистов<br/>в команде</p>
+              <p className="text-[10px] font-semibold text-textPrimary text-center leading-tight max-w-[72px]">Специалистов в команде</p>
             </div>
-            <div className="flex items-center justify-center text-navy text-lg font-light w-8 h-8">+</div>
-            <div className="text-center">
-              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-darkGreen to-accentTeal rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-card mb-2">
+            <div className="h-9 flex items-center justify-center flex-shrink-0">
+              <span className="text-navy text-xs font-light">+</span>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-9 h-9 flex-shrink-0 bg-gradient-to-br from-darkGreen to-accentTeal rounded-full flex items-center justify-center text-white text-sm font-bold shadow-card">
                 $
               </div>
-              <p className="text-xs font-semibold text-textPrimary">Предсказуемые<br/>затраты</p>
+              <p className="text-[10px] font-semibold text-textPrimary text-center leading-tight max-w-[72px]">Предсказуемые затраты</p>
             </div>
-            <div className="flex items-center justify-center text-navy text-lg font-light w-8 h-8">=</div>
-            <div className="text-center">
-              <div className="w-14 h-14 mx-auto bg-gradient-to-br from-accentBlue to-accentTeal rounded-full flex items-center justify-center text-white text-2xl font-bold shadow-card mb-2">
+            <div className="h-9 flex items-center justify-center flex-shrink-0">
+              <span className="text-navy text-xs font-light">=</span>
+            </div>
+            <div className="flex flex-col items-center gap-2">
+              <div className="w-9 h-9 flex-shrink-0 bg-gradient-to-br from-accentBlue to-accentTeal rounded-full flex items-center justify-center text-white text-sm font-bold shadow-card">
                 ✓
               </div>
-              <p className="text-xs font-semibold text-textPrimary">Полная<br/>прозрачность</p>
+              <p className="text-[10px] font-semibold text-textPrimary text-center leading-tight max-w-[72px]">Полная прозрачность</p>
             </div>
           </div>
 
-          {/* Десктоп: два ряди — круги/знаки, потім підписи */}
+          {/* Десктоп: сітка 5 колонок — круги/знаки і підписи строго по колонках */}
           <div className="hidden sm:block">
-            <div className="flex flex-row flex-wrap justify-center items-center gap-4 sm:gap-5 md:gap-8">
+            <div className="grid grid-cols-5 justify-items-center items-center gap-x-2 sm:gap-x-3 md:gap-x-4 gap-y-1.5 sm:gap-y-2">
               <div className="w-14 h-14 sm:w-20 sm:h-20 md:w-24 md:h-24 flex-shrink-0 bg-gradient-to-br from-navy to-accentBlue rounded-full flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl font-bold shadow-card">
                 5
               </div>
@@ -60,25 +64,23 @@ export default function Slide01Title() {
               <div className="w-14 h-14 sm:w-20 sm:h-20 md:w-24 md:h-24 flex-shrink-0 bg-gradient-to-br from-accentBlue to-accentTeal rounded-full flex items-center justify-center text-white text-2xl sm:text-3xl md:text-4xl font-bold shadow-card">
                 ✓
               </div>
-            </div>
-            <div className="flex flex-row justify-center items-center gap-4 sm:gap-5 md:gap-8 mt-2 sm:mt-3">
-              <p className="text-xs sm:text-sm font-semibold text-textPrimary text-center w-14 sm:w-20 md:w-24 flex-shrink-0">Специалистов<br/>в команде</p>
-              <div className="w-20 md:w-24 flex-shrink-0" aria-hidden />
-              <p className="text-xs sm:text-sm font-semibold text-textPrimary text-center w-14 sm:w-20 md:w-24 flex-shrink-0">Предсказуемые<br/>затраты</p>
-              <div className="w-20 md:w-24 flex-shrink-0" aria-hidden />
-              <p className="text-xs sm:text-sm font-semibold text-textPrimary text-center w-14 sm:w-20 md:w-24 flex-shrink-0">Полная<br/>прозрачность</p>
+              <p className="text-xs sm:text-sm font-semibold text-textPrimary text-center w-full max-w-[5rem] sm:max-w-20 md:max-w-24 mx-auto">Специалистов<br/>в команде</p>
+              <div aria-hidden />
+              <p className="text-xs sm:text-sm font-semibold text-textPrimary text-center w-full max-w-[5rem] sm:max-w-20 md:max-w-24 mx-auto">Предсказуемые<br/>затраты</p>
+              <div aria-hidden />
+              <p className="text-xs sm:text-sm font-semibold text-textPrimary text-center w-full max-w-[5rem] sm:max-w-20 md:max-w-24 mx-auto">Полная<br/>прозрачность</p>
             </div>
           </div>
         </div>
 
-        <div className="flex flex-wrap justify-center gap-2 sm:gap-3 text-sm sm:text-base stagger-children">
-          <div className="bg-gradient-to-r from-navy to-accentBlue text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl">
+        <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 sm:gap-3 text-xs sm:text-sm sm:text-base stagger-children">
+          <div className="bg-gradient-to-r from-navy to-accentBlue text-white px-2 py-1 sm:px-6 sm:py-3 rounded-md sm:rounded-lg sm:rounded-xl whitespace-nowrap">
             🧙‍♂️ Команда из 5 человек
           </div>
-          <div className="bg-gradient-to-r from-darkGreen to-accentTeal text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl">
+          <div className="bg-gradient-to-r from-darkGreen to-accentTeal text-white px-2 py-1 sm:px-6 sm:py-3 rounded-md sm:rounded-lg sm:rounded-xl whitespace-nowrap">
             💰 Понятные расходы
           </div>
-          <div className="bg-gradient-to-r from-accentBlue to-accentTeal text-white px-4 py-2 sm:px-6 sm:py-3 rounded-lg sm:rounded-xl">
+          <div className="bg-gradient-to-r from-accentBlue to-accentTeal text-white px-2 py-1 sm:px-6 sm:py-3 rounded-md sm:rounded-lg sm:rounded-xl whitespace-nowrap">
             📊 Видите весь процесс
           </div>
         </div>

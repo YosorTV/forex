@@ -3,15 +3,11 @@
 import { useEffect, useMemo, useState } from "react";
 import SlideLayout from "../SlideLayout";
 import {
-    Anchor,
-    ChevronLeft,
-    ChevronRight,
-    ExternalLink,
-    Gem,
-    Ship,
-    ShoppingCart,
-    Sparkles,
-    TrendingUp,
+  Anchor,
+  ChevronLeft,
+  ChevronRight,
+  ExternalLink, Ship, Sparkles,
+  TrendingUp
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -65,19 +61,6 @@ const projects: ProjectCard[] = [
     ],
   },
   {
-    title: "Mallprix — eCommerce платформа",
-    url: "https://mallprix.com/uk/",
-    icon: ShoppingCart,
-    iconGradient: "from-cyan-600 to-accentTeal",
-    dotColor: "bg-cyan-600",
-    bullets: [
-      "Широкий каталог: электроника, дом, авто, спорт, красота и другие категории",
-      "Покупки через онлайн-витрину с несколькими вариантами оплаты",
-      "Доставка через Нова Пошта в отделения, поштоматы и курьером",
-      "Смешанная репутация: много отзывов, есть вопросы к сервисным партнёрам по части брендов",
-    ],
-  },
-  {
     title: "Ship.Link — цифровой фрахтовый брокер",
     url: "https://mallprix.com/uk/",
     icon: Anchor,
@@ -88,19 +71,6 @@ const projects: ProjectCard[] = [
       "Цифровые запросы, переговоры и согласование условий вместо офлайн-цепочек",
       "Фокус на прозрачности и ускорении заключения чартерных сделок",
       "Подход к глобальному рынку морской логистики через единую платформу",
-    ],
-  },
-  {
-    title: "KUSH — ювелирный eCommerce бренд",
-    url: "https://www.kush.jewelry/uk?pageSize=16",
-    icon: Gem,
-    iconGradient: "from-purple-600 to-fuchsia-500",
-    dotColor: "bg-fuchsia-500",
-    bullets: [
-      "Украинский бренд украшений ручной работы с современным визуальным стилем",
-      "Ассортимент: серьги, кольца, браслеты с акцентом на выразительный дизайн",
-      "Онлайн-продажи с возможностью доставки и регулярными коллекциями",
-      "Локальное присутствие в Киеве и развитые digital-каналы коммуникации",
     ],
   },
 ];
