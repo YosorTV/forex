@@ -221,11 +221,11 @@ export default function Deck() {
           className="opacity-85"
         />
       </svg>
-      <div className="relative z-10">
+      <div className="relative z-[100]">
         <ProgressBar current={currentSlide} total={totalSlides} />
       </div>
-      
-      <div className={`relative z-10 transition-opacity duration-200 ${fadeClass}`}>
+
+      <div className={`relative z-10 pt-8 transition-opacity duration-200 sm:pt-2 ${fadeClass}`}>
         <CurrentSlideComponent />
       </div>
 
