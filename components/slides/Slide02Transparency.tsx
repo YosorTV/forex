@@ -21,7 +21,7 @@ export default function Slide02Transparency() {
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <Calendar className="text-accentBlue" size={20} />
           </div>
-          <strong className="text-navy text-lg block mb-2">Еженедельные показы</strong>
+          <strong className="text-navy text-lg block mb-2">Демострация результата</strong>
           <p className="text-textPrimary">
             Каждые две недели проводим демонстрацию работы системы. Без неожиданностей в конце проекта
           </p>
