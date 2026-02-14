@@ -32,7 +32,7 @@ export default function Slide02Transparency() {
           </div>
           <strong className="text-navy text-lg block mb-2">Регулярные отчёты</strong>
           <p className="text-textPrimary">
-            Еженедельный отчёт о прогрессе, рисках и следующих шагах. Всё понятно и прозрачно
+            Двухнедельный отчёт о прогрессе, рисках и следующих шагах. Всё понятно и прозрачно
           </p>
         </div>
         <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
