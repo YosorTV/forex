@@ -1,13 +1,17 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import SlideLayout from "../SlideLayout";
 import {
   Anchor,
+  Calendar,
   ChevronLeft,
   ChevronRight,
-  ExternalLink, Ship, Sparkles,
-  TrendingUp
+  ExternalLink,
+  Gem,
+  Ship,
+  Sparkles,
+  TrendingUp,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -73,21 +77,37 @@ const projects: ProjectCard[] = [
       "Подход к глобальному рынку морской логистики через единую платформу",
     ],
   },
+  {
+    title: "Lovebanus — Marbella events & bookings",
+    url: "https://lovebanus.com/",
+    icon: Calendar,
+    iconGradient: "from-amber-600 to-orange-500",
+    dotColor: "bg-amber-500",
+    bullets: [
+      "Онлайн-платформа и туроператор: бронирование отдыха и развлечений в Puerto Banús и Марбелье (Costa del Sol)",
+      "Полный пакет для групповых поездок: hen/stag parties, корпоративы, отдых с друзьями",
+      "Бронирование вечеринок, клубов, баров, чартер яхт, аренда вилл и организация мероприятий",
+      "Консьерж-сервис: трансферы, туры и планирование развлечений; более 10 лет на рынке",
+    ],
+  },
+  {
+    title: "KUSH jewelry — ювелирный бренд и магазин",
+    url: "https://www.instagram.com/kush.jewelry/",
+    icon: Gem,
+    iconGradient: "from-rose-700 to-amber-600",
+    dotColor: "bg-rose-500",
+    bullets: [
+      "Эксклюзивные украшения ручной работы: серьги, кольца, браслеты; акцент на индивидуальный стиль и современный дизайн",
+      "Изделия из золота и серебра, минимализм и смелые формы; позиционирование как произведения искусства",
+      "Украинский бренд, Киев (Shchekavytska St, 30/39); доставка и онлайн-продажи",
+      "Активное присутствие в Instagram с примерами коллекций и вдохновляющим контентом",
+    ],
+  },
 ];
 
 export default function Slide03Credibility() {
-  const [cardsPerPage, setCardsPerPage] = useState(1);
+  const cardsPerPage = 2;
   const [page, setPage] = useState(0);
-
-  useEffect(() => {
-    const updateCardsPerPage = () => {
-      setCardsPerPage(window.innerWidth >= 768 ? 2 : 1);
-    };
-
-    updateCardsPerPage();
-    window.addEventListener("resize", updateCardsPerPage);
-    return () => window.removeEventListener("resize", updateCardsPerPage);
-  }, []);
 
   const totalPages = Math.ceil(projects.length / cardsPerPage);
   const activePage = Math.min(page, totalPages - 1);
@@ -122,7 +142,7 @@ export default function Slide03Credibility() {
         className={`w-8 h-8 rounded-full border flex items-center justify-center transition-colors ${
           isFirstPage
             ? "border-gray-200 text-gray-300 cursor-not-allowed"
-            : "border-gray-300 text-navy hover:bg-gray-100"
+            : "border-gray-300 text-navy hover:bg-gray-100 cursor-pointer"
         }`}
       >
         <ChevronLeft size={16} />
@@ -138,7 +158,7 @@ export default function Slide03Credibility() {
         className={`w-8 h-8 rounded-full border flex items-center justify-center transition-colors ${
           isLastPage
             ? "border-gray-200 text-gray-300 cursor-not-allowed"
-            : "border-gray-300 text-navy hover:bg-gray-100"
+            : "border-gray-300 text-navy hover:bg-gray-100 cursor-pointer"
         }`}
       >
         <ChevronRight size={16} />

@@ -29,7 +29,7 @@ export default function NavigationBar({ current, total, onPrev, onNext, phase }:
         </button>
 
         <div className="min-w-20 rounded-full bg-white/45 px-4 py-2 text-center text-textMuted font-semibold text-sm sm:text-base">
-          {current + 1} <span className="hidden sm:inline">из </span>{total}
+          {current + 1} из {total}
           {phase && <span className="sr-only">{phase}</span>}
         </div>
 
