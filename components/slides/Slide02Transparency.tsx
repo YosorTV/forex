@@ -17,17 +17,15 @@ export default function Slide02Transparency() {
             Каждая задача отображается на доске с понятным статусом. Вы всегда знаете, кто над чем работает
           </p>
         </div>
-
         <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <Calendar className="text-accentBlue" size={20} />
           </div>
           <strong className="text-navy text-lg block mb-2">Еженедельные показы</strong>
           <p className="text-textPrimary">
-            Каждую неделю показываем работающую систему. Без неожиданностей в конце проекта
+            Каждые две недели проводим демонстрацию работы системы. Без неожиданностей в конце проекта
           </p>
         </div>
-
         <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <FileText className="text-accentBlue" size={20} />
@@ -37,7 +35,6 @@ export default function Slide02Transparency() {
             Еженедельный отчёт о прогрессе, рисках и следующих шагах. Всё понятно и прозрачно
           </p>
         </div>
-
         <div className="bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <DollarSign className="text-accentBlue" size={20} />
@@ -47,7 +44,6 @@ export default function Slide02Transparency() {
             Любое изменение требует вашего согласия. Вы всегда знаете влияние на сроки и бюджет
           </p>
         </div>
-
         <div className="md:col-span-2 bg-gray-50/80 border border-gray-200/60 rounded-xl p-4 sm:p-5 hover:border-gray-300 transition-colors">
           <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-3">
             <Shield className="text-accentBlue" size={20} />

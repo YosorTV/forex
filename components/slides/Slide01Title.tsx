@@ -57,7 +57,7 @@ export default function Slide01Title() {
             <span className="hidden sm:inline mx-2 text-slate-400" aria-hidden> | </span>
             <span className="text-center sm:whitespace-nowrap">Поэтапная оплата</span>
             <span className="hidden sm:inline mx-2 text-slate-400" aria-hidden> | </span>
-            <span className="text-center sm:whitespace-nowrap">Прозрачная отчетность и KPI</span>
+            <span className="text-center sm:whitespace-nowrap">Прозрачная отчетность</span>
           </div>
         </div>
       </div>
