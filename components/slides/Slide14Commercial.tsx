@@ -89,7 +89,7 @@ export default function Slide14Commercial() {
 
         <div className="bg-gray-50 border border-gray-200 rounded-xl p-3 sm:p-4 text-center">
           <p className="text-sm sm:text-base text-navy">
-            Условия оплаты, график счетов и условия прекращения фиксируются в договоре
+            Условия оплаты, график счетов и другие детали фиксируются в договоре
           </p>
         </div>
       </div>
