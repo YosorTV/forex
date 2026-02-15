@@ -92,7 +92,7 @@ const projects: ProjectCard[] = [
   },
   {
     title: "KUSH jewelry — ювелирный бренд и магазин",
-    url: "https://www.instagram.com/kush.jewelry/",
+    url: "https://www.kush.jewelry/uk",
     icon: Gem,
     iconGradient: "from-rose-700 to-amber-600",
     dotColor: "bg-rose-500",
